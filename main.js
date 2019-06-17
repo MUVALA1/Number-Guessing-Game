@@ -9,12 +9,17 @@ for(r=1;r<=10;r++){
 	  let z=prompt("Please input a number");
 	if(z>x){
 		alert("number is higher,make another guess");
-	}else if(z<x){
-		alert("number is lower,make another guess");
-	}else if(z===x){
-		alert("you win")
-	}else{
-	  alert("you lose")
 	}
-	
+	if(z<x){
+		alert("number is lower,make another guess");
+	}
+	if(z===x){
+		alert("you win");
+		break;
+	}
+	if (r==10){
+	  alert("you lose");
+	}	
 }
+	
+	
